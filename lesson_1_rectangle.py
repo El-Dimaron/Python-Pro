@@ -1,5 +1,15 @@
 class Rectangle:
 
+    """
+    The class is used as a basic representation of a rectangle.
+    To create an instance of the rectangle, two parameters are required: width and height.
+    :param width: float or integer
+    :param height: float or integer
+
+    The class has several methods, which can be used to either get information about the instance (area(), perimeter(),
+    is_square()) or to alter it (resize()).
+    """
+
     def __init__(self, width: float, height: float):
         self.width = width
         self.height = height
@@ -11,7 +21,7 @@ class Rectangle:
         return (self.width + self.height) * 2
 
     def is_square(self):
-        return True if self.width == self.height else False
+        return self.width == self.height
 
     def resize(self, new_width, new_height):
         self.width = new_width
