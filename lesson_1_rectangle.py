@@ -15,15 +15,19 @@ class Rectangle:
         self.height = height
 
     def area(self) -> float:
+        """Takes a square dimensions and returns the area value of the square"""
         return self.width * self.height
 
     def perimeter(self) -> float:
+        """Takes a square dimensions and returns the perimeter value of the square"""
         return (self.width + self.height) * 2
 
     def is_square(self) -> float:
+        """Checks if the rectangle is a square (returns True) or not (returns False)"""
         return self.width == self.height
 
     def resize(self, new_width: float, new_height: float):
+        """Used to alter the dimensions of the rectangle"""
         self.width = new_width
         self.height = new_height
 
