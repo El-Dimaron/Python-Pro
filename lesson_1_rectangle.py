@@ -14,16 +14,16 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    def area(self):
+    def area(self) -> float:
         return self.width * self.height
 
-    def perimeter(self):
+    def perimeter(self) -> float:
         return (self.width + self.height) * 2
 
-    def is_square(self):
+    def is_square(self) -> float:
         return self.width == self.height
 
-    def resize(self, new_width, new_height):
+    def resize(self, new_width: float, new_height: float):
         self.width = new_width
         self.height = new_height
 
